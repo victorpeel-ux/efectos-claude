@@ -28,7 +28,7 @@ Ejecuta `bash scripts/setup.sh`. Imprime `READY` cuando termina (la primera vez 
 1. Escribe el plan junto al vídeo como `<video>_efectos.json`:
    ```json
    {"effects": [
-     {"fx": "orbit", "start": 3.2, "end": 6.0, "images": "assets/iconos-reels"},
+     {"fx": "orbit", "start": 3.2, "end": 6.0},
      {"fx": "backdrop-word", "start": 14.0, "end": 16.3, "text": "CLAUDE", "color": "#F4FE5E"}
    ]}
    ```
@@ -44,7 +44,7 @@ Un solo efecto sin plan: `.venv/bin/python scripts/fx.py orbit <video> <salida.m
 | 1 | `noise` | Reels que se apilan detrás de tu cabeza | `images` (carpeta), `size` |
 | 2 | `lineup` | Tarjetas numeradas en arco sobre tu cabeza | `text` (con `\|`) |
 | 3 | `locked-on` | Esquinas que se clavan en tu cara y la cámara te sigue | `zoom` (1.35), `text` |
-| 4 | `orbit` | Reels o iconos orbitando tu cabeza | `images`, `count`, `speed`, `size` |
+| 4 | `orbit` | Tus reels orbitando tu cabeza (pásale capturas de tus reels en `images`) | `images`, `count`, `speed`, `size` |
 | 5 | `lean-in` | Zoom rápido en una palabra | `zoom` (1.45, máx. 2), `speed` |
 | 6 | `backdrop-word` | Palabra gigante que cae detrás de ti | `text`, `color`, `font` (`bold`/`serif`) |
 | 7 | `spotlight` | Apaga la luz y te deja iluminado | `text`, `color`, `push` |
@@ -86,7 +86,6 @@ Un solo efecto sin plan: `.venv/bin/python scripts/fx.py orbit <video> <salida.m
 
 Looks: `glitter-spotlight` = `spotlight` con `look=sparkle`.
 
-**Iconos incluidos:** `assets/iconos-reels/` tiene 6 iconos de reels (Reels, me gusta, reproducciones, comentario, enviar, +10/día) para usar con `images` en `orbit`, `noise` o `carousel-spin`, en vez de tu propia cara flotando.
 
 ## Reglas
 - Nunca tapar la cara: si un fotograma de revisión muestra texto encima, mueve (`x`, `y`) o acorta.
