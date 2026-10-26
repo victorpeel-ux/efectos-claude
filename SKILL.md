@@ -1,6 +1,6 @@
 ---
 name: efectos
-description: Añade cualquiera de 42 efectos de vídeo a un clip hablando a cámara (widgets de vidrio, iconos flotando, palabra gigante detrás, checklist, toggles de iPhone, spotlight, timeline y más). Los efectos siguen tu cara y pueden ir detrás de tu cabeza. Úsalo cuando el usuario escriba /efectos o /effects, nombre un efecto o pida añadir un efecto, zoom, color, sticker o animación a su vídeo.
+description: Añade cualquiera de 42 efectos de vídeo a un clip hablando a cámara (widgets de vidrio, reels flotando, zooms que siguen tu cara, palabra gigante detrás, checklist, toggles de iPhone, spotlight, timeline y más). Los efectos siguen tu cara y pueden ir detrás de tu cabeza. Úsalo cuando el usuario escriba /efectos o /effects, nombre un efecto o pida añadir un efecto, zoom, color, sticker o animación a su vídeo.
 ---
 
 # Efectos: 42 efectos de vídeo en español
